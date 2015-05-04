@@ -1382,5 +1382,8 @@
     .on('page:load', function(){
       initDefaultTextareas()
     }) // Turbolinks trigger
+    .on('pjax:complete', function(){
+      initDefaultTextareas()
+    }) // rack_pjax trigger
 
 }(window.jQuery);
