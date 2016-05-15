@@ -1379,7 +1379,7 @@
     .ready(function(){
       initDefaultTextareas()
     })
-    .on('page:load', function(){
+    .on('page:change', function(){
       initDefaultTextareas()
     }) // Turbolinks trigger
     .on('pjax:complete', function(){
