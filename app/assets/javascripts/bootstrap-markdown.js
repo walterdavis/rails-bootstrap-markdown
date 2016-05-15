@@ -1041,7 +1041,7 @@
 
             link = prompt(e.__localize('Insert Image Hyperlink'),'http://')
 
-            if (link != null) {
+            if (link != null && link != '' && link != 'http://') {
               // transform selection and set the cursor into chunked text
               e.replaceSelection('!['+chunk+']('+link+' "'+e.__localize('enter image title here')+'")')
               cursor = selected.start+2
