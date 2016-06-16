@@ -1385,5 +1385,8 @@
     .on('pjax:complete', function(){
       initDefaultTextareas()
     }) // rack_pjax trigger
+    .on('shown.bs.modal', function(){
+      initDefaultTextareas()
+    }) // bootstrap modal trigger
 
 }(window.jQuery);
